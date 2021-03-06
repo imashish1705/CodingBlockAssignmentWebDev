@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+}
+nav,.PhotoSection,.aboutMe,.project,.accordion,.skillSection{
+    background-color:white;
+    margin: 20px;
+}
+img{
+    height: 300px;
+    width: 200px;
+}
+a{
+    text-decoration: none;
+    
+}
+.anchor{
+ display: flex;
+ justify-content: center;
+ 
+}
+a:hover{
+    background-color: rgb(157, 209, 53);
+    transition: 700ms;
+}
