@@ -1,0 +1,22 @@
+.container{
+    text-align: center;
+}
+body{
+    background-color:black
+}
+li{
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: x-large;
+    color: yellow
+}
+#showData{
+    color:wheat;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+h1{
+    color: white;
+}
