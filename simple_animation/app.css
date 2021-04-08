@@ -1,0 +1,40 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+#sun{
+    height: 100px;
+    position: relative;
+     top: 200px;
+    left: 100%;
+    animation: sunrise 8s infinite;
+  background-color: aqua;
+}
+@keyframes sunrise{
+
+    0%{
+        left: 10%;
+    }
+       40%{
+           top: 0;
+           background-color: black
+       }
+       
+}
+#sea{
+  
+    position: relative;
+  
+   top: 120px;
+   
+   justify-content: bottom;
+   height: 400px;
+   width: auto;
+   background-color:rgb(43, 216, 43);
+}
+#sky{
+   
+    height: 250px;
+}
+
