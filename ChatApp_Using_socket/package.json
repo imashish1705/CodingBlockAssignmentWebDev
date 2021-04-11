@@ -1,12 +1,12 @@
 {
-  "name": "chatapp_using_socket",
+  "name": "chatapp",
   "version": "1.0.0",
-  "description": "This is group chat App using socket.io package",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./app.js"
+      "start": "node app.js"
   },
-  "author": "Ashish",
+  "author": "sabeel",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
