@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Product = require('../../models/product');
 
-//const { isLoggedIn } = require('../../middleware');
+const { isLoggedIn } = require('../../middleware');
 
 // Get all the products and display on index
 router.get('/products', async(req, res) => {
@@ -15,7 +15,7 @@ router.get('/products', async(req, res) => {
 
 //Getting a form for new product
 
-router.get('/products/new', (req, res) => {
+router.get('/products/new',isLoggedIn, (req, res) => {
     res.render('products/new');
 })
 
@@ -24,14 +24,14 @@ router.get('/products/new', (req, res) => {
 // Creating a new Product
 
 
-// router.post('/products', async(req, res) => {
+router.post('/products', async(req, res) => {
     
-//     await Product.create(req.body.product);
+    await Product.create(req.body.product);
 
-//     res.redirect('/products');
-// })
+    res.redirect('/products');
+})
 
-// Showing a particular product
+//Showing a particular product
 
 router.get('/products/:id', async(req, res) => {
     
